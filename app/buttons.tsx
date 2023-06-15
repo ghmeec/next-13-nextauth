@@ -15,7 +15,6 @@ export const LoginButton = () => {
             signIn()
                 .then(() => {
                     console.log("successfully logged in")
-                    toast.success('successfully logged in. Redirecting')
                     setLoading(false)
                     router.refresh
                 }).catch((e) => {
